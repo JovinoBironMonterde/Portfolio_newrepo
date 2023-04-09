@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./svg/svg-contact.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jovino Monterde</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- HAMBURGER BUTTON -->
+
+      <input type="checkbox" name="" id="burger-chk" class="chkbtn" />
+
+      <!-- END HAMBURGER BUTTON -->
+
+      <!-- SIDEBAR SECTION -->
+      <section class="sidebar-section" id="sidebar-id">
+        <div id="sidebar-info" class="">
+          <div id="conId">
+            <div class="sideprofile">
+              <img src="./img/home-face2.png" alt="" width="100%" />
+            </div>
+            <div class="hrline">
+              <hr />
+            </div>
+
+            <div class="sidebar-info">
+              <div>
+                <i class="fa-brands fa-github"></i>
+                <p>
+                  <a href="https://github.com/JovinoBironMonterde"
+                    >JovinoBironMonterde</a
+                  >
+                </p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>
+                  09664390844(Globe)<br />
+                  09380236471(Smart)
+                </p>
+              </div>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>
+                  Blk 66 Lot 25 Channel Ridge View Babatngon Leyte, Tacloban
+                  City
+                </p>
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <p>jmonterde@gmail.com</p>
+              </div>
+            </div>
+            <div class="hrline2">
+              <hr />
+              <h3>language</h3>
+              <hr />
+            </div>
+            <div class="language">
+              <div>
+                <h4>English</h4>
+                <span>50%</span>
+              </div>
+
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SIDEBAR SECTION -->
+
+      <!-- PAGES SECTION -->
+      <div class="pages" id="page-id">
+        <!-- TOPBAR SECTION -->
+        <section class="topbar-section lightmode" id="topbar-id">
+          <div class="logo">
+            <label for="burger-chk">
+              <i class="fa-solid fa-user"></i>
+            </label>
+            <h1>J<span>Monterde</span></h1>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#profission">Profission</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <div class="darmode">
+              <input
+                type="checkbox"
+                name=""
+                id="darkmode-chk"
+                onclick="darkmode()"
+              />
+              <label for="darkmode-chk">
+                <i class="fa-solid fa-sun" id="icon"></i>
+                <i class="fa-solid fa-moon" id="icon"></i>
+              </label>
+            </div>
+          </ul>
+        </section>
+        <!--END TOPBAR SECTION -->
+
+        <!-- HOME SECTION -->
+        <section class="home-section" id="home">
+          <div class="home-container">
+            <div class="hero-text">
+              <h3>Hello, I'm</h3>
+              <h1>Jovino Monterde</h1>
+              <h3>And I'm a</h3>
+              <span class="anim-skill"></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              ratione!
+            </p>
+            <div class="hero-btn">
+              <button data-bs-toggle="modal" data-bs-target="#myModal">
+                View Project
+              </button>
+              <button>Hire Me!</button>
+
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button> -->
+
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div
+                  class="modal-dialog modal-dialog-centered"
+                  style="width: 100%"
+                >
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END HOME SECTION -->
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+          <div class="about-container">
+            <div class="title">
+              <h1>About</h1>
+              <hr />
+            </div>
+            <div class="about-info reveal">
+              <div class="profile">
+                <img src="./img/home-face.png" width="100%" alt="" />
+              </div>
+              <div class="abouttext-info reveal">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+                  quae nobis aspernatur quibusdam recusandae. Quia aliquam aut
+                  iusto. Dolorem, ad! Laborum fugiat sapiente corrupti pariatur
+                  ut odio soluta, officia dolorum! Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Qui quae nobis aspernatur
+                  quibusdam recusandae. Quia aliquam aut iusto. Dolorem, ad!
+                  Laborum fugiat sapiente corrupti pariatur ut odio soluta,
+                  officia dolorum!
+                </p>
+                <div class="others">
+                  <div class="button">
+                    <button>Download <span>CV</span></button>
+                  </div>
+                  <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section class="experience-section" id="experience">
+          <div class="experience-title">
+            <h1>Ecperience</h1>
+          </div>
+          <div class="experience-conatainer">
+            <div class="container-box">
+              <div class="workexperience">
+                <div class="work reveal">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <div class="worktext textLeft">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nam, mollitia voluptates! Adipisci, enim consectetur.
+                      Blanditiis odio labore reiciendis, quam inventore delectus
+                      doloribus velit ea tenetur dolor odit autem dignissimos
+                      eaque!
+                    </p>
+                  </div>
+
+                  <div class="work-title textRight">
+                    <span class="company"><h1>Concentrix</h1></span>
+                    <span class="year">Sept. 16, 2017 - Dec. 30, 2022</span
+                    ><br />
+                    <span class="position">Security Control Officer</span>
+                  </div>
+                </div>
+
+                <div class="work reveal">
+                  <i class="fa-solid fa-briefcase"></i>
+
+                  <div class="work-title textLeft">
+                    <span class="company"><h1>Concentrix</h1></span>
+                    <span class="year">Sept. 16, 2017 - Dec. 30, 2022</span
+                    ><br />
+                    <span class="position">Security Control Officer</span>
+                  </div>
+                  <div class="worktext textRight">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquam, possimus unde expedita consectetur iste numquam.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="work reveal">
+                  <i class="fa-solid fa-briefcase"></i>
+
+                  <div class="worktext textLeft">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquam, possimus unde expedita consectetur iste numquam.
+                    </p>
+                  </div>
+                  <div class="work-title textRight">
+                    <span class="company"><h1>Concentrix</h1></span>
+                    <span class="year">Sept. 16, 2017 - Dec. 30, 2022</span
+                    ><br />
+                    <span class="position">Security Control Officer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END WORK EXPERIENCE SECTION -->
+
+        <!-- PROFISSION SECTION -->
+        <section class="profission-section" id="profission">
+          <div class="skills-bg"></div>
+          <div class="skill-title">
+            <h1>Profission</h1>
+          </div>
+          <div class="skill-con">
+            <div class="container">
+              <div class="cercle-bar-container">
+                <div class="skill-text textLeft reveal">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente voluptatem laborum voluptates delectus voluptate a
+                    repellat esse enim? Eaque voluptatibus necessitatibus, sed
+                    uam veritatis officiis nisi necessitatibus quaerat?
+                  </p>
+                </div>
+              </div>
+              <div class="bar-container">
+                <div class="left-bar">
+                  <div class="progressbar">
+                    <h4>Html5</h4>
+                    <div class="bars">
+                      <div class="bar-percent html"><span>90%</span></div>
+                    </div>
+                  </div>
+                  <div class="progressbar">
+                    <h4>Css3</h4>
+                    <div class="bars">
+                      <div class="bar-percent css"><span>90%</span></div>
+                    </div>
+                  </div>
+                  <div class="progressbar">
+                    <h4>Bootstrap5</h4>
+                    <div class="bars">
+                      <div class="bar-percent bootstrap"><span>75%</span></div>
+                    </div>
+                  </div>
+
+                  <div class="cercle-bar-container">
+                    <div class="cercle-bar">
+                      <div class="outer-bar wordpress">
+                        <div class="inner-bar">80%</div>
+                      </div>
+                      <h4>WordPress</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right-bar">
+                  <div class="progressbar">
+                    <h4>Javascript</h4>
+                    <div class="bars">
+                      <div class="bar-percent javascript"><span>80%</span></div>
+                    </div>
+                  </div>
+                  <div class="progressbar">
+                    <h4>React/Next</h4>
+                    <div class="bars">
+                      <div class="bar-percent Reactjs"><span>70%</span></div>
+                    </div>
+                  </div>
+                  <div class="progressbar">
+                    <h4>VB.Net</h4>
+                    <div class="bars">
+                      <div class="bar-percent vb-net"><span>80%</span></div>
+                    </div>
+                  </div>
+
+                  <div class="cercle-bar-container">
+                    <div class="cercle-bar">
+                      <div class="outer-bar mysql">
+                        <div class="inner-bar"><span>80%</span></div>
+                      </div>
+                      <h4>Mysql</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END PROFISSION SECTION -->
+
+        <!-- SERVICE SECTION -->
+        <section class="service-section" id="service">
+          <!-- <div class="background2"></div> -->
+          <div class="service-container">
+            <div>
+              <div class="service-title">
+                <h1>SERVICE</h1>
+              </div>
+
+              <div class="service-info">
+                <div class="box-con reveal">
+                  <div class="boxs topleft">
+                    <div>
+                      <i class="fa-solid fa-laptop-code"></i>
+                      <h1>Front End Developer</h1>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet Accusantium voluptas sapiente
+                      expedita?
+                    </p>
+                  </div>
+                  <div class="boxs topright">
+                    <div>
+                      <i class="fa-solid fa-laptop-code"></i>
+                      <h1>Web Design</h1>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet Accusantium voluptas sapiente
+                      expedita?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="box-con reveal">
+                  <div class="boxs">
+                    <div>
+                      <i class="fa-solid fa-laptop-code"></i>
+                      <h1>Front End Developer</h1>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet Accusantium voluptas sapiente
+                      expedita?
+                    </p>
+                  </div>
+                  <div class="boxs">
+                    <div>
+                      <i class="fa-solid fa-laptop-code"></i>
+                      <h1>Front End Developer</h1>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet Accusantium voluptas sapiente
+                      expedita?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END SERVICE SECTION -->
+
+        <!-- CONTACT ME -->
+        <section class="contact-section" id="contact">
+          <div class="contact-title">
+            <hr />
+            <h1>Contact Me</h1>
+          </div>
+          <div class="contact-container">
+            <div class="contact-img">
+              <img src="./svg/contact.svg" alt="" width="100%" />
+            </div>
+            <form action="">
+              <div>
+                <input type="text" class="fullname" placeholder="Fullname" />
+                <input
+                  type="email"
+                  class="txtinput"
+                  placeholder="Email Address"
+                />
+              </div>
+
+              <div>
+                <input type="text" class="txtinput" placeholder="Subject" />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id=""
+                  placeholder="Write somthing..."
+                ></textarea>
+              </div>
+
+              <button>Send<i class="fa-solid fa-paper-plane"></i></button>
+
+              <div class="div-or">
+                <div class="hrline">
+                  <hr />
+                  <p>Or</p>
+                  <hr />
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><i class="fa-brands fa-facebook-messenger"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#"><i class="fa-brands fa-skype"></i></a>
+                </div>
+                <p>Jovinobironmonterde@gmail.com</p>
+                <p>09664390844(Globe) or 09380236471(Tnt)</p>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer>
+          <div class="footer-title">
+            <hr />
+            <p>Git in Touch</p>
+            <hr />
+          </div>
+          <div class="footer-social-media">
+            <a href="#"
+              ><i class="fa-brands fa-facebook"></i><span>Facebook</span></a
+            >
+            <a href="#"
+              ><i class="fa-brands fa-instagram"></i><span>Inatagram</span></a
+            >
+            <a href="#"
+              ><i class="fa-brands fa-twitter"></i><span>Twitter</span></a
+            >
+            <a href="#"
+              ><i class="fa-brands fa-linkedin-in"></i><span>Linkedin</span></a
+            >
+            <a href="#"
+              ><i class="fa-brands fa-youtube"></i><span>Youtube</span></a
+            >
+          </div>
+          <div class="developer">
+            <p>Developr By <span>|</span> Jovino Monterde</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
