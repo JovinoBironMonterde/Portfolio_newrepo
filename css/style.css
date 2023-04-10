@@ -205,13 +205,13 @@ ul li {
   border-style: none;
 }
 
-/* VIEW PROJECT MODAL */
-.modal {
-  width: 100% !important;
-}
-.modal-content {
-  background-color: #07a1ac;
+/* VIEW PROJECT */
+#projectId {
+  position: relative;
   width: 100%;
+  height: 100vh;
+  background-color: #073f46;
+  display: none;
 }
 /* END HOME SECTION */
 
