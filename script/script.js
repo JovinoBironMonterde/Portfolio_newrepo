@@ -43,7 +43,7 @@ function reveal() {
 // document.getElementById("btnproject").addEventListener("click", shiwproject);
 var btntpro = document.getElementById("btnproject");
 var project = document.getElementById("projectId");
-var home = document.getElementById("home");
+var home = document.querySelector("home");
 var about = document.getElementById("about");
 var experience = document.getElementById("experience");
 var profission = document.getElementById("profission");
@@ -51,13 +51,13 @@ var service = document.getElementById("service");
 var contact = document.getElementById("contact");
 // function shiwproject() {
 btntpro.onclick = function () {
-  // project.style.display = block;
   home.style.display = none;
   about.style.display = none;
   experience.style.display = none;
   profission.style.display = none;
   service.style.display = none;
   contact.style.display = none;
+  project.style.display = block;
 };
 // function darkmode() {
 //   document.getElementById("topbar-id");

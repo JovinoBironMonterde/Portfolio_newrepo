@@ -6,6 +6,19 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.bg-fixed1 {
+  position: absolute;
+  background-attachment: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #07a1ac5d, #033b3f53),
+    url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 /** ANIMATION REVEAL**/
 .reveal {
   position: relative;
@@ -48,7 +61,7 @@ html {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: var(--darkmode);
+  background-color: transparent;
 }
 .chkbtn {
   display: none;
@@ -114,6 +127,30 @@ html {
   width: 100%;
   height: auto;
 }
+
+/* TITLE PAGE */
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.title h1 {
+  margin: 0 10px;
+}
+.titleright {
+  margin-left: 65%;
+}
+.titleleft {
+  margin-right: 65% !important;
+}
+hr {
+  width: 100%;
+  height: 5px;
+  border: none;
+  background-color: #062626;
+}
+/* END TITLE PAGE */
+
 .topbar-section {
   position: sticky;
   top: 0;
@@ -229,22 +266,6 @@ ul li {
 .about-section .about-container {
   display: block;
 }
-.title {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  float: right;
-  padding-top: 130px;
-}
-.title h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-hr {
-  border: 2px solid gray;
-  width: 100%;
-  margin-left: 10px;
-}
 
 .about-info {
   display: flex;
@@ -258,11 +279,10 @@ hr {
 }
 .profile {
   position: relative;
-  width: 350px;
+  width: 400px;
   height: 400px;
   background-color: var(--bd-promary);
   overflow: hidden;
-
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 .profile img {
@@ -405,23 +425,20 @@ li {
 }
 
 /* START OF RPOFISSION SECTION */
+
 .profission-section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: var(--bd-promary);
+  background-color: var(--lightmode);
+
+  border-radius: 0% 10% 35% 305% / 10% 0% 0% 400%;
 }
 .skills-bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--lightmode);
-  /* background-image: linear-gradient(45deg, #07a1ac, #07a1ac77),
-    url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  border-radius: 0% 10% 35% 305% / 10% 0% 0% 400%;
+  background-color: transparent;
 }
 .profission-section .skill-title {
   position: absolute;
@@ -451,7 +468,7 @@ li {
   background-color: var(--secondary-rbga-bgcolor);
   margin-right: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: var(--bg-secondary);
+  background-color: var(--bd-promary);
 }
 .cercle-bar-container {
   flex: 34%;
@@ -589,7 +606,7 @@ li {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #07a1ac53;
+  background-color: transparent;
 }
 
 .service-container {
@@ -598,7 +615,7 @@ li {
   display: flex;
   padding-top: 110px;
   justify-content: center;
-  background-color: var(--bd-promary);
+
   z-index: 99;
 }
 .service-title {
@@ -613,7 +630,6 @@ li {
   height: auto;
   margin: 3% 10%;
   padding: 30px;
-  background-color: var(--bg-light);
 }
 .box-con {
   display: flex;
@@ -624,7 +640,7 @@ li {
   height: 130px;
   margin: 10px;
   text-align: center;
-  background-color: var(--lightmode);
+  background-color: var(--bd-promary);
   border-radius: 20px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
